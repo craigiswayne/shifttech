@@ -1,0 +1,31 @@
+[
+  {
+    "amount": 50,
+    "type": "free_spins",
+    "game": "Gemix",
+    "countdown": 25
+  },
+  {
+    "amount": 10,
+    "type": "free_credits",
+    "countdown": 300
+  },
+  {
+    "amount": 10,
+    "type": "free_spins",
+    "game": "Lucky Leprechaun",
+    "countdown": 80
+  },
+  {
+    "amount": 78,
+    "type": "free_spins",
+    "game": "100,000 Pyramid",
+    "countdown": 100000
+  },
+  {
+    "amount": 10,
+    "type": "free_spins",
+    "game": "7 Sins",
+    "countdown": 80
+  }
+]

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "shifttech"
+    }
+  },
+  "defaultProject": "shifttech",
+  "cli": {
+    "analytics": "88980076-8b22-4ed0-a375-8183ccaa22e2"
+  }
 }
