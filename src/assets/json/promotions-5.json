@@ -1,0 +1,30 @@
+[
+  {
+    "amount": 50,
+    "type": "Free Spins",
+    "game": "Gemix",
+    "expiry": "2020-07-10 14:00",
+    "ctaText": "Claim now"
+  },
+  {
+    "amount": 10,
+    "type": "Free Spins",
+    "game": "Lucky Leprechaun",
+    "expiry": "2020-07-10 15:00",
+    "ctaText": "Claim"
+  },
+  {
+    "amount": 78,
+    "type": "Free Spins",
+    "game": "100,000 Pyramid",
+    "expiry": "2020-07-10 20:00",
+    "ctaText": "Claim"
+  },
+  {
+    "amount": 10,
+    "type": "Free Spins",
+    "game": "7 Sins",
+    "expiry": "2020-07-11 14:00",
+    "ctaText": "Claim"
+  }
+]

@@ -1,0 +1,18 @@
+<div id="promotion-list">
+    <div *ngFor="let promo of promotions | async" class="promotion" #promoEl>
+        <ng-container [ngSwitch]="promo.claimed">
+            <div class="title" *ngSwitchCase="true">You've {{promo.amount}} {{promo.type}} to use now</div>
+            <div class="title" *ngSwitchDefault>{{promo.amount}} {{promo.type}} on {{promo.game}}</div>
+        </ng-container>
+        <countdown #cd *ngIf="promo.canClaim && !promo.expired" [config]="getCountdownConfig(promo)" (event)="countdownChange($event, promo)" class="timer"></countdown>
+        <ng-container [ngSwitch]="promo.claimed">
+            <button *ngSwitchCase="true"><img src="/assets/images/icon-tick.svg" /></button>
+            <button *ngSwitchDefault (click)="claim(promo, promoEl)" [disabled]="promo.expired">
+                <ng-container [ngSwitch]="promo.expired">
+                    <span *ngSwitchCase="true">Expired</span>
+                    <span *ngSwitchDefault>{{promo.ctaText}}</span>
+                </ng-container>
+            </button>
+        </ng-container>
+    </div>
+</div>

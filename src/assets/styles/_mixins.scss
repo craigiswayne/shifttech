@@ -1,0 +1,10 @@
+@mixin vendor_prefixes($property, $val){
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  #{$property}: $val;
+  -webkit-#{$property}: $val;
+}
+
+@mixin for-desktop {
+  @media (min-width: 1024px) { @content; }
+}
